@@ -30,7 +30,7 @@
 		return mysqli_free_result($result_set);
 	}
 	
-	function db_escape($connection, $string) {
+	function db_escape($connection, $string) { //escapes special chars in mysql query
 		return mysqli_real_escape_string($connection, $string);
 	}
 	
